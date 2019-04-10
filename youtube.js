@@ -55,11 +55,13 @@ while(url.search('youtube.com')!=null && url.search('watch')!=null){
 				}
 				else {
 					div.style.display = 'inline';
+					circle.style.display = 'inline';
 				}
 			}
 			else {
 				if(flag == 0){
 					div.style.display = 'none';
+					circle.style.display = 'none';
 				}
 			}
 		});
