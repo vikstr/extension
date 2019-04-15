@@ -7,14 +7,19 @@ function getDurationTime(){
 	return elemDurationTime[0].textContent;
 };
 var url = window.location.href; 
-var elemButtonPlay = document.getElementsByClassName('ytp-play-button');
+	var elemButtonPlay = document.getElementsByClassName('ytp-play-button');
+	var elemFullScreen = document.getElementsByClassName('ytp-fullscreen-button');
+window.onload = function() {
+	alert( 'Документ и все ресурсы загружены' );
+	var elemButtonPlay = document.getElementsByClassName('ytp-play-button');
+	var elemFullScreen = document.getElementsByClassName('ytp-fullscreen-button');
+};
 elemButtonPlay[0].addEventListener("click", function(){
 		var currentTime = getCurrentTime();
 		alert(currentTime);
 		var durationTime = getDurationTime();
 		alert(durationTime);
 });
-var elemFullScreen = document.getElementsByClassName('ytp-fullscreen-button');
 var div = document.createElement('div');
 var circle = document.createElement('div');
 var flag = 1;
