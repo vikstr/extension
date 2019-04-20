@@ -1,0 +1,19 @@
+{
+  "name": "Расширение для браузера Google chrome",
+  "description": "Test",
+  "version":"1.0",
+  "manifest_version": 2,
+  "browser_action": {
+        "default_icon": "image.png",
+        "default_popup": "popup.html",
+        "default_title": "emovi.live"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": ["styles.css"],
+      "js" : ["message.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
