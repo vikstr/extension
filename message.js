@@ -1,0 +1,18 @@
+document.documentElement.style.height = '100%';
+document.body.style.height = '100%';
+document.documentElement.style.width = '100%';
+document.body.style.width = '100%';
+var div = document.createElement('div');
+document.body.appendChild( div );
+div.style.position = 'absolute';
+div.style.display = 'inline';
+div.style.width = '364px';
+div.style.height = '62px';
+div.style.top = '82%';
+div.style.left = '5.02%';
+div.style.right = '0%';
+div.style.bottom = '0%';
+div.style.backgroundColor = 'rgba(14, 14, 14, 0.4)';
+div.style.borderRadius = '25px';
+div.style.zindex = '1';
+div.style.cursor = 'pointer';

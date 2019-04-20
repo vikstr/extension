@@ -85,13 +85,21 @@ container.onmouseout = function(){
 	div.style.display = 'none';
 	circle.style.display = 'none';
 };
-inputmessage.addEventListener("keyup", function(event) {
+/*inputmessage.addEventListener("keyup", function(event) {
   // Number 13 is the "Enter" key on the keyboard
   if (event.keyCode === 13) {
     // Cancel the default action, if needed
     // Trigger the button element with a click
     
   }
-});
+});*/
+container.onmouseover = function(){
+	div.style.display = 'inline';
+	circle.style.display = 'inline';
+};
+container.onmouseout = function(){
+	div.style.display = 'none';
+	circle.style.display = 'none';
+};
 
 
